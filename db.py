@@ -13,7 +13,7 @@ import os
 @st.cache_resource(show_spinner=False)
 def get_client():
     try:
-        uri = os.getenv["uri"]
+        uri = os.getenv("uri")
     except Exception:
         st.error(
             "MongoDB URI not found. Add it to `.streamlit/secrets.toml` under "
